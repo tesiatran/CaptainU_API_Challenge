@@ -1,6 +1,17 @@
 class ApplicationController < ActionController::API
   before_action :require_login
 
+  def decoded_token
+    if authorization_header
+      token = authorization_header.split(' ')[1]
+      begin
+        JWT.decode(token, 'secret string', true, algorithm: 'HS256')
+      rescue JWT::DecodeError
+        nil
+      end
+    end
+  end
+
   def user_logged_in
     if decoded_token
       user_id = decoded_token[0]['user_id']
