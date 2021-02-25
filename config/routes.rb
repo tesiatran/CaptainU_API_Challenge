@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   # option 2
   resources :tournaments, only: [:show, :index]
-  resources :teams, only: [:show, :index]
+  resources :teams, only: [:show]
   resources :players, only: [:show, :index]
   resources :assessments, only: [:create, :show, :update, :destroy]
   resources :notes, only: [:show, :update, :destroy]

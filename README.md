@@ -1,4 +1,4 @@
-# README
+# CaptainU API Challenge
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -19,7 +19,7 @@ Things you may want to cover:
 
 
 Possible Roadmap?
-x 1. /login
+  1. /login
   2. /tournaments
   3. /tournaments/{tournament_id}
   4. /tournaments/{tournament_id}/teams
