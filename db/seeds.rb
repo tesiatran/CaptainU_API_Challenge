@@ -25,3 +25,7 @@ end
 8.times do
   Player.create(first_name: "Greatest", last_name: "Ever", height: 68, weight: 172, birthday: "1988-05-05", graduation_year: 2020, position: "center", recruit: true)
 end
+
+11.times do
+  Assessments.create(rating: 8, user_id: 3, tournament_id: 28, player_id: 61, assessment_type: "running", created_at: "2021-01-01", updated_at: "2021-02-11")
+end
