@@ -35,4 +35,8 @@ Rails.application.routes.draw do
 
   get "/teams/{teams_id}", to: "teams#show"
 
+  get "/players", to: "players#index"
+  get "/players/{player_id}", to: "players#show"
+  get "/players/{player_id}/assessments", to: "players#player_assessments"
+
 end

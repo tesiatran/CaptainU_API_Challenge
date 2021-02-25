@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-  def show # GET /teams/{team_id}
+  def show # GET one team's data
     render json: @team
   end
 end
