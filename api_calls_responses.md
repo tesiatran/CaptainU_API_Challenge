@@ -1,23 +1,23 @@
 # API Endpoints
 
-I wasn't able to test every endpoint. The first 3 are expected to look like below, and I think it's because I don't have the authentication working properly yet.
+> I wasn't able to test every endpoint. The first 3 are expected to look like below, and I think it's because I don't have the authentication working properly yet.
 
 http://localhost:3001/users
-`{
-    "error": "Invalid username or password"
-}`
+    `{
+        "error": "Invalid username or password"
+    }`
 
 http://localhost:3001/login
-`{
-    "data": {
-        "message": "Invalid user credentials"
-    }
-}`
+    `{
+        "data": {
+            "message": "Invalid user credentials"
+        }
+    }`
 
 http://localhost:3001/auto_login
-`{
-  "message":"Log in to access"
-}`
+    `{
+      "message":"Log in to access"
+    }`
 
 http://localhost:3001/tournaments
 http://localhost:3001/tournaments/{tournament_id}
