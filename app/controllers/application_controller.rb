@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   # before_action :require_login
-  ## commenting out the above to test other endpoints since authentication isn't working as intended yet
+  ## Commenting out the above to test other endpoints since authentication isn't working as intended yet
 
   def encode_token(payload)
     JWT.encode(payload, "secret_key")

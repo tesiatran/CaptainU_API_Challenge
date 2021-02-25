@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def auto_login # use token from post request to make get request to reverse check data
+  def auto_login # Use token from post request to make get request to reverse check data
     render json: @user
   end
 
