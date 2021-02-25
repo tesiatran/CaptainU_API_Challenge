@@ -21,3 +21,7 @@ end
 8.times do
   Team.create(name: "Westwood Wildcats", age_group: "high school", coach: "Phil Jackson")
 end
+
+8.times do
+  Player.create(first_name: "Greatest", last_name: "Ever", height: 68, weight: 172, birthday: "1988-05-05", graduation_year: 2020, position: "center", recruit: true)
+end
