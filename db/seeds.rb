@@ -13,3 +13,7 @@ user = User.create(email: "coach3@email.edu", password: "testing3")
 5.times do
   Tournament.create(name: "All American Showcase", city: "Kingwood", state: "IL", start_date: "2020-09-05")
 end
+
+8.times do
+  Team.create(name: "Westwood Wildcats", age_group: "high school", coach: "Phil Jackson")
+end
