@@ -29,3 +29,7 @@ end
 11.times do
   Assessments.create(rating: 8, user_id: 3, tournament_id: 28, player_id: 61, assessment_type: "running", created_at: "2021-01-01", updated_at: "2021-02-11")
 end
+
+11.times do
+  Notes.create(user_id: 5, note: "Consistently the fastest runner", assessment_id: 17, created_at: "2020-08-08", updated_at: "2020-12-12")
+end
