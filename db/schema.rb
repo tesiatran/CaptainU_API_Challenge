@@ -28,8 +28,6 @@ ActiveRecord::Schema.define(version: 2021_02_25_103450) do
   create_table "events", force: :cascade do |t|
     t.string "name"
     t.string "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "notes", force: :cascade do |t|
@@ -49,16 +47,24 @@ ActiveRecord::Schema.define(version: 2021_02_25_103450) do
     t.integer "graduation_year"
     t.string "position"
     t.boolean "recruit"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "age_group"
     t.string "coach"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tournaments", force: :cascade do |t|
+    t.string "name"
+    t.string "city"
+    t.string "state"
+    t.string "start_date"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "password_digest"
   end
 
 end
