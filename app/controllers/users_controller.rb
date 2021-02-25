@@ -1,20 +1,10 @@
 class UsersController < ApplicationController
   before_action :require_login, only: [:auto_login]
 
-  def create
-    @user = User.create(user_params)
-    if @user.valid?
-      token = encode_token({user_id: @user.id})
-      render json: {user: @user, token: token}
-    else
-      render json: {error: "Invalid username or password"}
-    end
-  end
-
   def login
     @user = User.find_by(email: params[:email])
 
-    if @user && @user.authenticate(params[:password])
+    if @user && @user.authenticate(params[:password]) # 'authenticate' method from bcrypt
       token = encode_token({ user_id: @user.id })
       render json: { auth_token: token, message: "User authenticated" }
     else
@@ -22,7 +12,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def auto_login
+  def auto_login # use token from post request to make get request to reverse check data
     render json: @user
   end
 
