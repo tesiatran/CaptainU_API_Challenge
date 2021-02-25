@@ -17,11 +17,11 @@ Rails.application.routes.draw do
   ## Are options 1 & 2 the same? If yes, why nest, and how much nesting is okay?
 
   # option 2
-  resources :tournaments, only: [:show, :index]
-  resources :teams, only: [:show]#
-  resources :players, only: [:show, :index]
-  resources :assessments, only: [:create, :show, :update, :destroy]
-  resources :notes, only: [:show, :update, :destroy]
+  # resources :tournaments, only: [:show, :index]
+  # resources :teams, only: [:show]#
+  # resources :players, only: [:show, :index]
+  # resources :assessments, only: [:create, :show, :update, :destroy]
+  # resources :notes, only: [:show, :update, :destroy]
 
   ## Or maybe option 3 is the only correct answer??
 
@@ -30,5 +30,9 @@ Rails.application.routes.draw do
   get "/tournaments/{tournament_id}", to: "tournament#one_tournament"
   get "/tournaments/{tournamend_id}/events", to: "tournament#tournament_events"
   get "/tournaments/{tournamend_id}/teams", to: "tournament#tournament_teams"
+
+  get "/events/{event_id}", to: "events#show"
+
+  get "/teams/{teams_id}", to: "teams#show"
 
 end
