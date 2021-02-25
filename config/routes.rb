@@ -44,4 +44,7 @@ Rails.application.routes.draw do
   patch "/assessments/{assessment_id}", to: "assessments#update"
   delete "/assessments/{assessment_id}", to: "assessments#destroy"
 
+  post "/notes", to: "notes#create"
+  patch "/notes/{notes_id}", to: "notes#update"
+  delete "/notes/{notes_id}", to: "notes#destroy"
 end
