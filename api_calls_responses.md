@@ -1,23 +1,42 @@
-http://localhost:3001/auto_login/auto_login
+# API Endpoints
 
-http:./tournaments", to: "tournament#index"
-  get "/tournaments/{tournament_id}", to: "tournament#one_tournament"
-  get "/tournaments/{tournament_id}/events", to: "tournament#tournament_events"
-  get "/tournaments/{tournament_id}/teams", to: "tournament#tournament_teams"
+I wasn't able to test every endpoint. The first 3 are expected to look like below, and I think it's because I don't have the authentication working properly yet.
 
-  get "/events/{event_id}", to: "events#show"
+http://localhost:3001/users
+`{
+    "error": "Invalid username or password"
+}`
 
-  get "/teams/{teams_id}", to: "teams#show"
+http://localhost:3001/login
+`{
+    "data": {
+        "message": "Invalid user credentials"
+    }
+}`
 
-  get "/players", to: "players#index"
-  get "/players/{player_id}", to: "players#show"
-  get "/players/{player_id}/assessments", to: "players#player_assessments"
+http://localhost:3001/auto_login
+`{
+  "message":"Log in to access"
+}`
 
-  post "/assessments", to: "assessments#create"
-  get "/assessments/{assessment_id}", to: "assessments#show"
-  patch "/assessments/{assessment_id}", to: "assessments#update"
-  delete "/assessments/{assessment_id}", to: "assessments#destroy"
+http://localhost:3001/tournaments
+http://localhost:3001/tournaments/{tournament_id}
+http://localhost:3001/tournaments/{tournament_id}/events
+http://localhost:3001/tournaments/{tournament_id}/teams
 
-  post "/notes", to: "notes#create"
-  patch "/notes/{notes_id}", to: "notes#update"
-  delete "/notes/{notes_id}", to: "notes#destroy"
+http://localhost:3001/events/{event_id}
+
+http://localhost:3001/teams/{teams_id}
+
+http://localhost:3001/players
+http://localhost:3001/players/{player_id}
+http://localhost:3001/players/{player_id}/assessments
+
+http://localhost:3001/assessments
+http://localhost:3001/assessments/{assessment_id}
+http://localhost:3001/assessments/{assessment_id}
+http://localhost:3001/assessments/{assessment_id}
+
+http://localhost:3001/notes
+http://localhost:3001/notes/{notes_id}
+http://localhost:3001/notes/{notes_id}

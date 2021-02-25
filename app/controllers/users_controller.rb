@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :require_login, only: [:auto_login]
 
   def create
-    @user = User.create(user_params)
+    @user = User.create(login_params)
     if @user.valid?
       token = encode_token({user_id: @user.id})
       render json: {auth_token: token, user: @user}
