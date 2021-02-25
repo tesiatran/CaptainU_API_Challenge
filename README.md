@@ -15,10 +15,19 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
 
-* ...
+
+Possible Roadmap?
+x 1. /login
+  2. /tournaments
+  3. /tournaments/{tournament_id}
+  4. /tournaments/{tournament_id}/teams
+  5. /teams/{teams_id}
+  6. /players
+  7. /players/{player_id}
+  8. /players/{player_id}/assessments
+  9. /assessments
+  10. /assessments/{assessment_id}
+  11. /notes
+  12. /notes/{notes_id}
