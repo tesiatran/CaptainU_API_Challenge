@@ -6,8 +6,6 @@ class CreateNotes < ActiveRecord::Migration[6.1]
       t.integer :assessment_id
       t.string :created_at
       t.string :updated_at
-
-      t.timestamps
     end
   end
 end

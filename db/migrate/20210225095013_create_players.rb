@@ -9,8 +9,6 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
       t.integer :graduation_year
       t.string :position
       t.boolean :recruit
-
-      t.timestamps
     end
   end
 end

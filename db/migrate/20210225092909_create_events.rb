@@ -3,8 +3,6 @@ class CreateEvents < ActiveRecord::Migration[6.1]
     create_table :events do |t|
       t.string :name
       t.string :date
-
-      t.timestamps
     end
   end
 end
