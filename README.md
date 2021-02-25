@@ -3,7 +3,7 @@
 Build a new API that allows coaches to login to a mobile app and proceed to see information on upcoming tournaments, attending teams, athletes, and various details about the athletes.
 
 ## Getting Started
-- Ruby 2.7.2, Rails 6.1.3, PostgreSQL 12.6
+- Tech stack: Ruby 2.7.2, Rails 6.1.3, PostgreSQL 12.6
 - Gems used: 'bcrypt', 'rack-cors', 'jwt'
 - Git clone the repo to your computer
 - Install PostgreSQL if you don't have it
@@ -13,6 +13,7 @@ Build a new API that allows coaches to login to a mobile app and proceed to see 
   - `rails db:seed`
 - Start Rails server:
   - `rails s` or `rails s -p 3001` (sub in preferred port)
+
 
 ### Possible Roadmap?
   1. /login
