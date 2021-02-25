@@ -39,9 +39,9 @@ Rails.application.routes.draw do
   get "/players/{player_id}", to: "players#show"
   get "/players/{player_id}/assessments", to: "players#player_assessments"
 
-  post "/assessments" to: "assessments#create"
-  get "/assessments/{assessment_id}" to: "assessments#show"
-  patch "/assessments/{assessment_id}" to: "assessments#update"
-  delete "/assessments/{assessment_id}" to: "assessments#destroy"
+  post "/assessments", to: "assessments#create"
+  get "/assessments/{assessment_id}", to: "assessments#show"
+  patch "/assessments/{assessment_id}", to: "assessments#update"
+  delete "/assessments/{assessment_id}", to: "assessments#destroy"
 
 end
