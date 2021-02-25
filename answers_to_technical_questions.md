@@ -10,7 +10,7 @@ used? Please include a snippet of code that shows how you've used it.
 
 > Hands down, I would have to say React Router (since React is technically JavaScript). It's not super new, but it has been super useful in the freelance project that I'm currently working on.
 
-    `import React from 'react';
+    import React from 'react';
     import { Switch, Route } from 'react-router-dom';
     import Landing from './landing';
     import Admin from './admin';
@@ -32,7 +32,7 @@ used? Please include a snippet of code that shows how you've used it.
       )
     }
 
-    export default Homepage;`
+    export default Homepage;
 
 
 3. How would you track down a performance issue in production? Have you ever had to do
@@ -43,7 +43,7 @@ this?
 
 4. Please describe yourself using JSON
 
-    `{
+    {
       "Tesia": {
         "lastName": "Tran",
         "occupation": {
@@ -80,4 +80,4 @@ this?
           "totalDogs": 5
         }
       }
-    }`
+    }
